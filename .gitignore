@@ -1,0 +1,5 @@
+*.vsidx
+*.opendb
+*vcxproj*
+*.sln
+.vs/MandoRizer/v17
