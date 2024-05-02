@@ -11,6 +11,8 @@
 #include <iostream>
 
 void printAppTitle() {
+	system("cls");
+
 	std::cout << R"(
  ______                  _      ______  _                  
 |  ___ \                | |    (_____ \(_)                 
@@ -36,6 +38,12 @@ int main() {
 	)";
 
 		std::cin >> optionSelected;
+
+		if (std::cin.fail()) {
+			std::cin.clear();
+			std::cin.ignore(256, '\n');
+		}
+
 		switch (optionSelected) {
 			case 1:
 				// Go to option
@@ -47,7 +55,10 @@ int main() {
 				// Go to option
 				break;
 			default:
+				printAppTitle();
+
 				std::cout << "-- INVALID OPTION --";
+
 				optionSelected = 0;
 				break;
 		}
