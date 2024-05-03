@@ -4,9 +4,9 @@
 		-- 2 Escolher numero aleatorio dentre numeros fornecidos pelo user
 		-- 3 Escolher nome aleatorio em lista fornecida pelo user
 		-- 4 Embaralhar lista
+		-- 5 Exit
 
-	- Ter opção de dar exit no app em qualquer momento apertando alguma tecla especifica
-	- Ter opção de voltar ao menu do app em qualquer momento apertando alguma tecla especifica
+	- Ter opção de voltar ao menu do app
 */
 
 #include <iostream>
@@ -80,6 +80,16 @@ void option3() {
 	for (int element : numList) {
 		std::cout << element << " ";
 	}
+
+	// Gera num aleatorio ---
+	std::random_device randomDevice;
+	std::mt19937 gen(randomDevice());
+	std::uniform_int_distribution<> dis(0, (numList.size() - 1));
+
+	[[maybe_unused]] int randomIndex{ dis(gen) };
+	// Gera num aleatorio ---
+
+	std::cout << '\n' << "Selected number: " << numList[randomIndex];
 }
 
 int main() {
@@ -104,23 +114,21 @@ int main() {
 		}
 
 		switch (optionSelected) {
-			case 1: // numero aleatório entre MIN e MAX
+			case 1:
 				option1();
 				break;
-			case 2: // nome aleatorio em lista
+			case 2:
 				break;
-			case 3: // numero aleatorio dentre lista
+			case 3:
 				option3();
 				break;
-			case 4: // Embaralhar lista
+			case 4:
 				break;
-			case 5: // Exit
+			case 5:
 				break;
 			default:
 				printAppTitle();
-
 				std::cout << "-- INVALID OPTION --" << '\n';
-
 				optionSelected = 0;
 				break;
 		}
