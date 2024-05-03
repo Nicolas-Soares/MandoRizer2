@@ -11,6 +11,7 @@
 
 #include <iostream>
 #include <random>
+#include <vector>
 
 void printAppTitle() {
 	system("cls");
@@ -50,6 +51,37 @@ void option1() {
 	std::cout << "Output: " << randomNum;
 }
 
+void option3() {
+	printAppTitle();
+
+	std::cout << "-- Pick random NUMBER within list --" << '\n';
+	std::cout << "Input your numbers using ENTER:" << '\n';
+
+	[[maybe_unused]] std::vector<int> numList{};
+	[[maybe_unused]] int num{};
+
+	while (true) {
+		std::cin >> num;
+
+		if (std::cin.fail()) {
+			std::cin.clear();
+			std::cin.ignore(256, '\n');
+
+			break;
+		}
+
+		numList.push_back(num);
+	}
+
+	printAppTitle();
+
+	std::cout << "Complete list: ";
+
+	for (int element : numList) {
+		std::cout << element << " ";
+	}
+}
+
 int main() {
 	printAppTitle();
 
@@ -58,9 +90,10 @@ int main() {
 	while (optionSelected == 0) {
 		std::cout << R"(Select an option:
 1 - Pick random NUMBER between MIN and MAX
-2 - Pick random NUMBER within list
-3 - Pick random NAME within list
+2 - Pick random NAME within list
+3 - Pick random NUMBER within list
 4 - List shuffle
+5 - Exit
 )";
 
 		std::cin >> optionSelected;
@@ -77,8 +110,11 @@ int main() {
 			case 2: // nome aleatorio em lista
 				break;
 			case 3: // numero aleatorio dentre lista
+				option3();
 				break;
 			case 4: // Embaralhar lista
+				break;
+			case 5: // Exit
 				break;
 			default:
 				printAppTitle();
