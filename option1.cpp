@@ -1,6 +1,6 @@
 #include <iostream>
-#include <random>
 #include "printAppTitle.h"
+#include "genRandNum.h"
 
 void option1() {
 	printAppTitle();
@@ -15,13 +15,7 @@ void option1() {
 	[[maybe_unused]] int numY{};
 	std::cin >> numY;
 
-	// Gera num aleatorio ---
-	std::random_device randomDevice;
-	std::mt19937 gen(randomDevice());
-	std::uniform_int_distribution<> dis(numX, numY);
-
-	[[maybe_unused]] int randomNum{ dis(gen) };
-	// Gera num aleatorio ---
+	[[maybe_unused]] int randomNum{ genRandNum(numX, numY) };
 
 	std::cout << "Output: " << randomNum;
 }

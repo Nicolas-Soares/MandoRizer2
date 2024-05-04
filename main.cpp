@@ -15,47 +15,7 @@
 #include "printAppTitle.h"
 #include "option1.h"
 #include "option3.h"
-
-void option2() {
-	printAppTitle();
-
-	std::cout << "-- Pick random NAME within list --" << '\n';
-	std::cout << "Input items using ENTER:" << '\n';
-
-	[[maybe_unused]] std::vector<std::string_view> list{};
-	[[maybe_unused]] std::string item{};
-
-	while (true) {
-		// (std::cin >> std::ws, item); TEM Q USAR A MERDA DO GETLINE MAS N LEMBRO COMO FAZ E TA SEM INTERNET
-
-		if (item == "stop") {
-			std::cin.clear();
-			std::cin.ignore(256, '\n');
-
-			break;
-		}
-
-		list.push_back(item);
-	}
-
-	printAppTitle();
-
-	std::cout << "Complete list: ";
-
-	for (std::string_view element : list) {
-		std::cout << element << " ";
-	}
-
-	// Gera num aleatorio ---
-	std::random_device randomDevice;
-	std::mt19937 gen(randomDevice());
-	std::uniform_int_distribution<> dis(0, (list.size() - 1));
-
-	[[maybe_unused]] int randomIndex{ dis(gen) };
-	// Gera num aleatorio ---
-
-	std::cout << '\n' << "Output: " << list[randomIndex];
-}
+#include "option2.h"
 
 int main() {
 	printAppTitle();

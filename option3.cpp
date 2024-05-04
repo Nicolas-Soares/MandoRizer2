@@ -1,7 +1,7 @@
 #include <iostream>
-#include <random>
 #include <vector>
 #include "printAppTitle.h"
+#include "genRandNum.h"
 
 void option3() {
 	printAppTitle();
@@ -33,13 +33,7 @@ void option3() {
 		std::cout << element << " ";
 	}
 
-	// Gera num aleatorio ---
-	std::random_device randomDevice;
-	std::mt19937 gen(randomDevice());
-	std::uniform_int_distribution<> dis(0, (numList.size() - 1));
-
-	[[maybe_unused]] int randomIndex{ dis(gen) };
-	// Gera num aleatorio ---
+	[[maybe_unused]] int randomIndex{ genRandNum(0, (numList.size() - 1)) };
 
 	std::cout << '\n' << "Output: " << numList[randomIndex];
 }
