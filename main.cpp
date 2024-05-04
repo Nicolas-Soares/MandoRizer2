@@ -51,11 +51,52 @@ void option1() {
 	std::cout << "Output: " << randomNum;
 }
 
+void option2() {
+	printAppTitle();
+
+	std::cout << "-- Pick random NAME within list --" << '\n';
+	std::cout << "Input items using ENTER:" << '\n';
+
+	[[maybe_unused]] std::vector<std::string_view> list{};
+	[[maybe_unused]] std::string item{};
+
+	while (true) {
+		// (std::cin >> std::ws, item); TEM Q USAR A MERDA DO GETLINE MAS N LEMBRO COMO FAZ E TA SEM INTERNET
+
+		if (item == "stop") {
+			std::cin.clear();
+			std::cin.ignore(256, '\n');
+
+			break;
+		}
+
+		list.push_back(item);
+	}
+
+	printAppTitle();
+
+	std::cout << "Complete list: ";
+
+	for (std::string_view element : list) {
+		std::cout << element << " ";
+	}
+
+	// Gera num aleatorio ---
+	std::random_device randomDevice;
+	std::mt19937 gen(randomDevice());
+	std::uniform_int_distribution<> dis(0, (list.size() - 1));
+
+	[[maybe_unused]] int randomIndex{ dis(gen) };
+	// Gera num aleatorio ---
+
+	std::cout << '\n' << "Output: " << list[randomIndex];
+}
+
 void option3() {
 	printAppTitle();
 
 	std::cout << "-- Pick random NUMBER within list --" << '\n';
-	std::cout << "Input your numbers using ENTER:" << '\n';
+	std::cout << "Input numbers using ENTER:" << '\n';
 
 	[[maybe_unused]] std::vector<int> numList{};
 	[[maybe_unused]] int num{};
@@ -89,7 +130,7 @@ void option3() {
 	[[maybe_unused]] int randomIndex{ dis(gen) };
 	// Gera num aleatorio ---
 
-	std::cout << '\n' << "Selected number: " << numList[randomIndex];
+	std::cout << '\n' << "Output: " << numList[randomIndex];
 }
 
 int main() {
@@ -118,6 +159,7 @@ int main() {
 				option1();
 				break;
 			case 2:
+				option2();
 				break;
 			case 3:
 				option3();
