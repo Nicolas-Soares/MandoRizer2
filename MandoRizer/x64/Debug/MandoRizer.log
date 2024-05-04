@@ -1,24 +1,27 @@
 ﻿  main.cpp
-C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(89,54): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(89,54): warning C4267:         with
-C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(89,54): warning C4267:         [
-C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(89,54): warning C4267:             _Ty=int
-C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(89,54): warning C4267:         ]
-C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(89,54): warning C4365: 'argument': conversion from 'unsigned __int64' to '_Ty', signed/unsigned mismatch
-C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(89,54): warning C4365:         with
-C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(89,54): warning C4365:         [
-C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(89,54): warning C4365:             _Ty=int
-C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(89,54): warning C4365:         ]
-C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(94,42): warning C4365: 'argument': conversion from 'int' to 'const unsigned __int64', signed/unsigned mismatch
-C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(130,57): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(130,57): warning C4267:         with
-C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(130,57): warning C4267:         [
-C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(130,57): warning C4267:             _Ty=int
-C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(130,57): warning C4267:         ]
-C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(130,57): warning C4365: 'argument': conversion from 'unsigned __int64' to '_Ty', signed/unsigned mismatch
-C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(130,57): warning C4365:         with
-C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(130,57): warning C4365:         [
-C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(130,57): warning C4365:             _Ty=int
-C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(130,57): warning C4365:         ]
-C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(135,45): warning C4365: 'argument': conversion from 'int' to 'const unsigned __int64', signed/unsigned mismatch
+C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(51,54): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(51,54): warning C4267:         with
+C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(51,54): warning C4267:         [
+C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(51,54): warning C4267:             _Ty=int
+C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(51,54): warning C4267:         ]
+C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(51,54): warning C4365: 'argument': conversion from 'unsigned __int64' to '_Ty', signed/unsigned mismatch
+C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(51,54): warning C4365:         with
+C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(51,54): warning C4365:         [
+C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(51,54): warning C4365:             _Ty=int
+C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(51,54): warning C4365:         ]
+C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(56,42): warning C4365: 'argument': conversion from 'int' to 'const unsigned __int64', signed/unsigned mismatch
+C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(92,57): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(92,57): warning C4267:         with
+C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(92,57): warning C4267:         [
+C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(92,57): warning C4267:             _Ty=int
+C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(92,57): warning C4267:         ]
+C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(92,57): warning C4365: 'argument': conversion from 'unsigned __int64' to '_Ty', signed/unsigned mismatch
+C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(92,57): warning C4365:         with
+C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(92,57): warning C4365:         [
+C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(92,57): warning C4365:             _Ty=int
+C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(92,57): warning C4365:         ]
+C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\main.cpp(97,45): warning C4365: 'argument': conversion from 'int' to 'const unsigned __int64', signed/unsigned mismatch
+  option1.cpp
+  printAppTitle.cpp
+  Generating Code...
   MandoRizer.vcxproj -> C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\x64\Debug\MandoRizer.exe
