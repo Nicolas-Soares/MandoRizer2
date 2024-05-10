@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <string>
 #include "printAppTitle.h"
 #include "genRandNum.h"
 
@@ -9,15 +10,14 @@ void option2() {
 	std::cout << "-- Pick random NAME within list --" << '\n';
 	std::cout << "Input items using ENTER:" << '\n';
 
-	[[maybe_unused]] std::vector<std::string_view> list{};
+	[[maybe_unused]] std::vector<std::string> list{};
 	[[maybe_unused]] std::string item{};
 
 	while (true) {
-		// (std::cin >> std::ws, item); TEM Q USAR A MERDA DO GETLINE MAS N LEMBRO COMO FAZ E TA SEM INTERNET
+		std::getline(std::cin >> std::ws, item);
 
 		if (item == "stop") {
 			std::cin.clear();
-			std::cin.ignore(256, '\n');
 
 			break;
 		}
@@ -29,7 +29,7 @@ void option2() {
 
 	std::cout << "Complete list: ";
 
-	for (std::string_view element : list) {
+	for (std::string element : list) {
 		std::cout << element << " ";
 	}
 
