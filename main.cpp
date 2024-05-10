@@ -18,6 +18,16 @@
 #include "option2.h"
 #include "option4.h"
 
+void goBackToTitleScreen() {
+	std::cout << '\n' << '\n' << "Go back to title screen? (y/n) ";
+
+	char choice{};
+
+	std::cin >> choice;
+
+	
+}
+
 int main() {
 	printAppTitle();
 
@@ -40,6 +50,9 @@ int main() {
 		}
 
 		switch (optionSelected) {
+			case 9:
+				goBackToTitleScreen();
+				break;
 			case 1:
 				option1();
 				break;
@@ -49,7 +62,7 @@ int main() {
 			case 3:
 				option3();
 				break;
-			case 4: // WIP
+			case 4:
 				option4();
 				break;
 			case 5:
@@ -60,6 +73,8 @@ int main() {
 				optionSelected = 0;
 				break;
 		}
+
+		goBackToTitleScreen();
 	}
 
 	return 0;
