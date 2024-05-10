@@ -3,5 +3,5 @@
 *vcxproj*
 *.sln
 .vs/MandoRizer/v17
-.x64
-.MandoRizer
+x64
+MandoRizer
