@@ -1,12 +1,2 @@
-﻿  main.cpp
-  option1.cpp
-  option2.cpp
-C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\option2.cpp(36,63): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\option2.cpp(36,63): warning C4365: 'argument': conversion from 'unsigned __int64' to 'int', signed/unsigned mismatch
-C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\option2.cpp(38,42): warning C4365: 'argument': conversion from 'int' to 'const unsigned __int64', signed/unsigned mismatch
-  option3.cpp
-C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\option3.cpp(36,66): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\option3.cpp(36,66): warning C4365: 'argument': conversion from 'unsigned __int64' to 'int', signed/unsigned mismatch
-C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\option3.cpp(38,45): warning C4365: 'argument': conversion from 'int' to 'const unsigned __int64', signed/unsigned mismatch
-  Generating Code...
+﻿  option4.cpp
   MandoRizer.vcxproj -> C:\Users\nicks\Documents\myprojects\cppProjects\MandoRizer\x64\Debug\MandoRizer.exe

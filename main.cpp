@@ -16,6 +16,7 @@
 #include "option1.h"
 #include "option3.h"
 #include "option2.h"
+#include "option4.h"
 
 int main() {
 	printAppTitle();
@@ -48,7 +49,8 @@ int main() {
 			case 3:
 				option3();
 				break;
-			case 4:
+			case 4: // WIP
+				option4();
 				break;
 			case 5:
 				break;
