@@ -18,22 +18,21 @@
 #include "option2.h"
 #include "option4.h"
 
-void goBackToTitleScreen() {
+char backToTitleScreen{};
+
+void askGoToTitleScreen() {
 	std::cout << '\n' << '\n' << "Go back to title screen? (y/n) ";
-
-	char choice{};
-
-	std::cin >> choice;
-
-	
+	std::cin >> backToTitleScreen;
 }
 
 int main() {
-	printAppTitle();
-
 	int optionSelected{};
 	
-	while (optionSelected == 0) {
+	while ((optionSelected == 0) || (backToTitleScreen == 'y')) {
+		backToTitleScreen = 'n';
+
+		printAppTitle();
+
 		std::cout << R"(Select an option:
 1 - Pick random NUMBER between MIN and MAX
 2 - Pick random NAME within list
@@ -50,20 +49,21 @@ int main() {
 		}
 
 		switch (optionSelected) {
-			case 9:
-				goBackToTitleScreen();
-				break;
 			case 1:
 				option1();
+				askGoToTitleScreen();
 				break;
 			case 2:
 				option2();
+				askGoToTitleScreen();
 				break;
 			case 3:
 				option3();
+				askGoToTitleScreen();
 				break;
 			case 4:
 				option4();
+				askGoToTitleScreen();
 				break;
 			case 5:
 				break;
@@ -73,8 +73,6 @@ int main() {
 				optionSelected = 0;
 				break;
 		}
-
-		goBackToTitleScreen();
 	}
 
 	return 0;
