@@ -27,10 +27,10 @@ void option2() {
 
 	printAppTitle();
 
-	std::cout << "Complete list: ";
+	std::cout << "Complete list:" << '\n';
 
 	for (std::string element : list) {
-		std::cout << element << " ";
+		std::cout << element << '\n';
 	}
 
 	[[maybe_unused]] int randomIndex{ genRandNum(0, (list.size() - 1)) };

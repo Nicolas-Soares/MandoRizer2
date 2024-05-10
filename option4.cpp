@@ -27,7 +27,7 @@ void option4() {
 
 	printAppTitle();
 
-	std::cout << "Input list: " << '\n';
+	std::cout << "Input list:" << '\n';
 
 	for (std::string element : list) {
 		std::cout << element << '\n';
