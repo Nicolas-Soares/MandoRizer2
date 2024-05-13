@@ -24,7 +24,7 @@ It has the following options:
 ```
 msbuild MandoRizer.vcxproj
 ```
-
+> Run the app tab is under construction
 ### Run the app
 ```
 start ./Debug/MandoRizer.exe
