@@ -27,5 +27,5 @@ msbuild MandoRizer.vcxproj
 
 ### Run the app
 ```
-start ./x64/Release/MandoRizer.exe
+start ./Debug/MandoRizer.exe
 ```
