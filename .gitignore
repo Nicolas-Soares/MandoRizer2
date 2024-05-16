@@ -1,6 +1,7 @@
 *.vsidx
 *.opendb
 *.sln
-.vs/MandoRizer/v17
+.vs
 x64
 MandoRizer
+MandoRizer_build

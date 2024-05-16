@@ -40,6 +40,7 @@
   <ItemGroup>
     <None Include=".gitignore" />
     <None Include="README.md" />
+    <None Include="PropertySheet.props" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="printAppTitle.h">

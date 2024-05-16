@@ -143,6 +143,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
+    <None Include="PropertySheet.props" />
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
