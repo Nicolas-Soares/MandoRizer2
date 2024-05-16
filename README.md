@@ -12,20 +12,20 @@ It has the following options:
 - List shuffle;
 
 ## Dependencies
-
-- [MSBuild](https://visualstudio.microsoft.com/pt-br/downloads/)
-    - Scroll down to the bottom of the page > Tools for Visual Studio > Build Tools for Visual Studio 2022;
-    
-    This way you just install MSBuild without needing to install Visual Studio. If you already have Visual Studio installed on your machine, this is not necessary, although, MSBuild needs to be in your PATH env variable.
+- C++20
+- [CMake](https://cmake.org/download/)
 
 ## Quick start
 ### Build the app
 
 ```
-msbuild MandoRizer.vcxproj
+$ mkdir build
+$ cd build
+$ cmake ..
+$ cmake --build .
 ```
-> Run the app tab is under construction
 ### Run the app
 ```
-start ./Debug/MandoRizer.exe
+$ cd Debug
+$ start mandorizer.exe
 ```
