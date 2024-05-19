@@ -1,6 +1,5 @@
 *.vsidx
 *.opendb
-*.sln
 .vs
 x64
 MandoRizer
