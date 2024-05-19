@@ -48,6 +48,9 @@ int main() {
 			std::cin.ignore(256, '\n');
 		}
 
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+
 		switch (optionSelected) {
 			case 1:
 				option1();
@@ -68,8 +71,6 @@ int main() {
 			case 5:
 				break;
 			default:
-				printAppTitle();
-				std::cout << "-- INVALID OPTION --" << '\n';
 				optionSelected = 0;
 				break;
 		}

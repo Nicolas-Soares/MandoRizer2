@@ -11,9 +11,12 @@ void option1() {
 	[[maybe_unused]] int numX{};
 	std::cin >> numX;
 
-	std::cout << "Input MAX: ";
-	[[maybe_unused]] int numY{};
-	std::cin >> numY;
+	[[maybe_unused]] int numY{ numX - 1 };
+
+	while (numY <= numX) {
+		std::cout << "Input MAX: ";
+		std::cin >> numY;
+	}
 
 	[[maybe_unused]] int randomNum{ genRandNum(numX, numY) };
 
